@@ -1,0 +1,149 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -530px;
+  width: 500px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  z-index: 901;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.open {
+  right: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.content {
+  overflow-y: auto;
+  /* flex: 1; */
+}
+
+.newEntryButton {
+    background-color: lightgreen;
+    color: black;
+    font-size: 1.25rem;
+    padding: .25rem .75rem;
+    cursor: pointer;
+    border: solid 2px green;
+    border-radius: 10px;
+}
+
+.newEntryButton:hover {
+  background-color: #8fdb8f; 
+}
+
+.newEntryButton:active {
+  background-color: #6fcf6f; 
+  transform: translateY(1px);
+}
+
+
+
+/* DRAWER TABLE CSS*/
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.thead {
+  background-color: #ececec;
+}
+
+.th {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+.td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.table-row:hover {
+  background-color: #f1f5f9; 
+}
+
+.table-row:hover {
+  background-color: #f1f5f9;
+  cursor: pointer;
+}
+
+.noData {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+  font-style: italic;
+}
+
+
+.selected-row {
+  background-color: #f1f5f9 !important;
+}
+
+
+/* filter css */
+.filterDropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filterSelect {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.filterButton {
+  background-color: #f3f3f3;
+  border: 1px solid #aaa;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.filterButton:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+.filterButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* view details */
+.info-button {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}

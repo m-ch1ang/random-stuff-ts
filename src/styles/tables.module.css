@@ -1,0 +1,249 @@
+.dashboard {
+  font-family: sans-serif;
+  /* border: 2px blue solid; */
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.thead {
+  background-color: #ececec;
+}
+
+.th {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+.td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.table-row:hover {
+  background-color: #f1f5f9;
+}
+
+.table-row:hover {
+  background-color: #f1f5f9;
+  cursor: pointer;
+}
+
+.selected-row {
+  background-color: #f1f5f9 !important;
+}
+
+.current-row-view {
+  background-color: #3f92ff !important;
+}
+
+
+
+.sortButton {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  color: inherit;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.newEntryButton {
+    background-color: lightgreen;
+    color: black;
+    font-size: 1.25rem;
+    padding: .25rem .75rem;
+    cursor: pointer;
+    border: solid 2px green;
+    border-radius: 10px;
+}
+
+.newEntryButton:hover {
+  background-color: #8fdb8f; 
+}
+
+.newEntryButton:active {
+  background-color: #6fcf6f; 
+  transform: translateY(1px);
+}
+
+
+
+
+
+/* filter css */
+.filterDropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filterSelect {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.filterButton {
+  background-color: #f3f3f3;
+  border: 1px solid #aaa;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.filterButton:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+.filterButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* view details */
+.info-button {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+
+.infoQuickview {
+  margin: 0.5rem 0 0 0;
+  padding: 0 1rem;
+}
+
+
+
+
+.paginationControls {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.nextPageButton {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nextPageButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+/* table data entry */
+/* table data entry */
+/* table data entry */
+/* table data entry */
+/* table data entry */
+/* table data entry */
+.content {
+  /* display: flex;
+  flex-direction: column; */
+  width: 100%;
+  max-width: 100%;
+  overflow-x: none;
+}
+
+.entryTable {
+  border-collapse: collapse;
+  table-layout: fixed; 
+  width: 100%;
+}
+
+.bomCodeColumn {
+  direction: rtl;
+  /* background-color: red; */
+}
+
+.entryTh {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 14px;
+  text-align: left;
+  font-weight: bold;
+  /* width: 100%;    */
+}
+
+.entryTd {
+  border: 1px solid #ccc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.entryInput {
+  width: fit-content;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+.entryInputTable {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  font-size: 14px;
+  border: 0px solid #ccc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.entryTable th:nth-child(1),
+.entryTable td:nth-child(1) {
+  width: 8rem;
+  white-space: nowrap;
+}
+
+input:disabled {
+  background-color: rgb(239, 239, 239);
+}
+
+
+/* table display */
+.wrapCell {
+  white-space: pre-wrap;  /* preserves line breaks */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 200px; /* optional: control width */
+}
